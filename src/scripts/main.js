@@ -1,8 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { default as App } from './components';
+import { Clock, Tabs } from './components';
 
 ReactDOM.render(
-  <App />,
+  <Clock />,
+  document.getElementById('clock-timer')
+);
+
+ReactDOM.render(
+  <Tabs />,
   document.getElementById('tabs')
 )
